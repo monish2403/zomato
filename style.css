@@ -48,7 +48,7 @@
 
 /* Hero Section */
 .hero-section {
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapers.com/images/featured/food-4k-1pf6px6ryqfjtnyr.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -61,11 +61,17 @@
 .hero-section h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #f8f9fa;
 }
 
 .search-box {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.go-to-login{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 /* Categories */
@@ -77,7 +83,8 @@
 }
 
 .category-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
+    border: 2px solid #000;
 }
 
 .category-card img {
@@ -87,35 +94,64 @@
 }
 
 .category-card h3 {
+    font-family: var(--roboto);
+    cursor: pointer;
     padding: 15px;
     margin: 0;
     font-size: 1.2rem;
 }
 
-/* Restaurant Cards */
-.restaurant-card {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.restaurant-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.restaurant-info {
+.category-card p {
     padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
 }
 
-.rating {
-    background-color: #48c479;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-    display: inline-block;
+/* footer */
+
+.container1{
+    background-color: rgb(220,53,69);
+    height: 60vh;
+}
+
+.container1 h1{
+    font-family: var(--poppins);
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.zomato h3{
+    text-transform: capitalize;
+    padding: 0 60px;
+}
+
+.zomato ul li{
+    list-style: none;
+    text-transform: capitalize;
+    padding: 0 60px;
+}
+
+/* Restaurant Cards */
+
+.card-title{
+    font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-text{
+    font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Login/Signup Forms */
